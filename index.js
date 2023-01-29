@@ -6,6 +6,6 @@ chrome.storage.local.get().then((result) => {
 
 function toggleMode() {
     chrome.storage.local.set({ mode: document.getElementById("mode").checked }).then(() => {
-        //console.log("Value is set to " + document.getElementById("mode").checked);
+        console.log("Value is set to " + document.getElementById("mode").checked);
     });
 }

@@ -1,3 +1,5 @@
+/* GENERAL */
+
 .html {
     width: 500px;
 }
@@ -10,6 +12,8 @@
 .text {
     font-size: large;
 }
+
+/* MAIN SWITCH */
 
 #modeLabel input
 {
@@ -62,4 +66,31 @@ input:checked + .slider:before
 input:checked + .slider
 {
   box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
+
+
+/* */
+
+
+body {
+  background-color: #1c1c1c; /* dark gray */
+  color: #fff; /* white */
+  font-family: 'Star Wars', Arial, sans-serif; /* Star Wars font */
+}
+
+#modeLabel {
+  background-color: #f8d568; /* Star Wars yellow */
+}
+
+.slider {
+  background-color: #000; /* black */
+  border-color: #f8d568; /* Star Wars yellow */
+}
+
+input:checked + .slider:before {
+  background-color: #f8d568; /* Star Wars yellow */
+}
+
+input:checked + .slider {
+  box-shadow: 0 0 0 2px #f8d568; /* Star Wars yellow */
 }

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Develop without Distraction",
   "description": "Extension that blocks the suggestions sections of websites that developers commonly refer to while developing",
-  "version": "1.0",
+  "version": "0.1",
   "permissions": [
     "storage"
   ],
@@ -17,6 +17,20 @@
     {
         "matches": ["https://stackoverflow.com/questions/*"],
         "js": ["stackoverflow.js"]
+    },
+    {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["youtube.js"],
+        "run_at": "document_start"
+    },
+    {
+        "matches": ["*://*.reddit.com/*"],
+        "js": ["reddit.js"]
+    },
+    {
+        "matches": ["*://*.quora.com/*"],
+        "js": ["quora.js"],
+        "run_at": "document_end"
     }
   ]
 }
